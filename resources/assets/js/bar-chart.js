@@ -1,10 +1,10 @@
 /**
- * Created by Sijn on 06/05/2018.
+ * Created by Sijn on 07/05/2018.
  */
-import { Line } from 'vue-chartjs'
+import { Bar } from 'vue-chartjs'
 
 export default {
-    extends: Line,
+    extends: Bar,
     data () {
         return {
             gradient: null,
@@ -25,7 +25,7 @@ export default {
 
         // Overwriting base render method with actual data.
         this.renderChart({
-            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+            labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
             datasets: [
                 {
                     label: '2018 Dataset',
@@ -34,8 +34,7 @@ export default {
                     borderWidth: 1,
                     pointBorderColor: 'white',
                     backgroundColor: this.gradient,
-                    data: [40, 39, 10, 40, 39, 80, 40]
-
+                    data: [40, 20, 12, 39, 10, 40, 39, 80, 40, 20, 12, 11]
                 },
                 {
                     label: '2017 Dataset',
@@ -44,7 +43,7 @@ export default {
                     pointBorderColor: 'white',
                     borderWidth: 1,
                     backgroundColor: this.gradient2,
-                    data: [60, 55, 32, 10, 2, 12, 53]
+                    data: [38, 18, 15, 45, 13, 37, 36, 75, 50, 30, 18, 17]
                 }
             ]
         })

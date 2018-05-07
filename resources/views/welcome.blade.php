@@ -102,6 +102,7 @@
 
     <title>Satellite Status Checker</title>
 
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
@@ -111,9 +112,14 @@
     </div>
     <div id="app">
         <satellite-status-grid></satellite-status-grid>
-        <satellite-data-charts></satellite-data-charts>
+        {{--<satellite-data-charts></satellite-data-charts>--}}
     </div>
 </div>
+<style>
+    html, body {
+    font-family: 'Raleway', sans-serif;
+}
+</style>
 <script src="{{ asset('js/app.js') }}"></script>
 </body>
 </html>
